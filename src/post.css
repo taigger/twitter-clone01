@@ -1,0 +1,41 @@
+.post__badge{
+    color: var(--twitter-color);
+    font-size:14px !important;
+}
+
+.post__headerText{
+    display:flex;
+    margin-left:20px;
+    font-size:14px !important;
+}
+
+.post__body{
+
+}
+
+.post__body > img{
+    border-radius:20px;
+    /* 画像にサイズを指定することで収まります */
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+}
+
+.post{
+    display:flex;
+    align-items:flex-start;
+    border-bottom:1px solid var(--twitter-background);
+    padding-bottom:10px;
+    /* width:30%; */
+    max-width:100%;
+    
+}
+
+.post__avatar{
+    margin-left:10px;
+    margin-top:10px;
+}
+
+.post__headerDescription{
+    font-size:12px !important;
+}

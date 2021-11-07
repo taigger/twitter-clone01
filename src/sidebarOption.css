@@ -1,0 +1,26 @@
+.sidebarOption{
+
+    display:flex;
+    align-items:center;
+    /* カーソルをあわせたときの挙動 */
+    cursor:pointer;
+}
+
+.sidebarOption > h2{
+    font-weight: 800;
+    font-size:20px;
+    margin-right: 20px;
+}
+
+.sidebarOption:hover{
+    background-color:#e8f5fe;
+    border-radius:30px;
+    /* これで親に定義した色を呼び出せます */
+    color:var(--twitter-color);
+    transition: color 100ms ease-out;
+}
+
+.sidebarOption-active{
+    color:var(--twitter-color);
+
+}
