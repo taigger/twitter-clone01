@@ -1,0 +1,17 @@
+.explore{
+    flex: 0.4;
+    border-right:1px solid var(--twitter-background-color);
+    /* min-width:fit-content; */
+    overflow-y: scroll;
+   margin-left:10px;
+}
+
+.explore__header{
+    /* ヘッダーを固定する */
+    position:sticky;
+    top:0;
+    background-color:white;
+    z-index:100;
+    border-top:1px solid var(--twitter-background-color);
+    padding:15px 20px;
+}

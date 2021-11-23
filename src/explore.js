@@ -1,9 +1,12 @@
 import React from 'react';
+import'./explore.css'
 
 function Explore(){
 
     return(
-        <div>explore</div>
+        <div className="explore">
+            <h1>explore</h1>
+        </div>
     );
 
 }

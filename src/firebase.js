@@ -1,9 +1,9 @@
 import firebase from "firebase/compat/app";
-import 'firebase/auth';
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import 'firebase/compat/auth'
 import 'firebase/storage';
-import 'firebase//compat/firestore';
+import 'firebase/compat/firestore';
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -22,10 +22,12 @@ const firebaseConfig = {
 
 // Initialize Firebase.
 // 下記を追加
-const firebaseApp = firebase.initializeApp(firebaseConfig);
-const db = firebaseApp.firestore();
+export const fire = firebase.initializeApp(firebaseConfig);
+
+const db = fire.firestore();
 
 export default db;
 
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+
